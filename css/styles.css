@@ -24,6 +24,7 @@
 }
 .second-items:hover .gris {
   color: rgb(33, 150, 243);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .second-items:focus .icon-header {
   fill: rgb(33, 150, 243);
@@ -52,6 +53,7 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   font-size: 14px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list .header-items .link-header:hover {
 color: rgb(33, 150, 243);
@@ -67,7 +69,6 @@ color: rgb(33, 150, 243);
   font-weight: 500;
   line-height: 1.17;
   letter-spacing: 0.02em;
-
   display: flex;
   align-items: center;
 }
@@ -238,10 +239,12 @@ letter-spacing: 0.96px;
 .button:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:focus {
   color: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .grafic {
   color: rgb(33, 33, 33);
@@ -548,9 +551,11 @@ height: 81px;
 border-radius: 4px;
 border: 1px solid rgb(175, 177, 184);
 padding: 14px 32px 14px 32px;
+
 }
 .div-clientes:hover {
   border-color: var(--brand-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-div {
   display: flex;
@@ -596,10 +601,12 @@ padding: 14px 32px 14px 32px;
 .icons-links:hover {
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-links:focus {
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-footer {
   display: flex;
@@ -614,9 +621,11 @@ padding: 14px 32px 14px 32px;
 }
 .icons-footer:hover {
   background-color: var(--brand-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-footer:focus {
   background-color: var(--brand-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   display: flex;
@@ -654,6 +663,7 @@ border-color: rgba(0, 0, 0, 0.10);
 }
 .icon-modal:hover {
 fill: rgb(33, 150, 243);
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 }
 .div-boton-modal {
@@ -843,11 +853,23 @@ border: 1px solid rgba(33, 33, 33, 0.20);
 margin-bottom: 10px;
 padding-left: 40px;
 }
+.input-modal:focus-visible {
+  outline: none;
+}
 .input-modal:focus {
   border-color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .input-modal:focus + .icon-persona-negra {
 fill: #2196F3;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.area:focus {
+  border-color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.area:focus-visible {
+outline: none;
 }
 .icon-persona-negra {
   position: absolute;
