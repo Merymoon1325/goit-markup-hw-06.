@@ -902,21 +902,21 @@ height: 120px;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.20);
 }
-.checkbox{
+/* .checkbox{
 width: 16px;
 height: 15px;
 border-color: #212121;
-}
-.parrafo-checkbox {
+} */
+/* .parrafo-checkbox {
   color: #757575;
 font-family: Roboto;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 171.429% */
+line-height: 24px; 171.429% 
 letter-spacing: 0.42px;
 margin-top: 24px;
-}
+} */
 .label-modal {
   color: #757575;
 font-family: Roboto;
@@ -955,4 +955,52 @@ cursor: pointer;
  outline: none;
  border: 1px solid rgb(33, 150, 243);
  transition: 0.3s;
+}
+.terms {
+  position: relative;
+  cursor: pointer;
+}
+.terms:hover .checkbox-unchecked {
+  fill: rgb(33, 150, 243);
+}
+.checkbox-checked {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  background-color: #2196F3;
+  fill: white;
+  opacity: 0;
+  visibility: hidden;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+.checkbox-unchecked {
+  width: 16px;
+  height: 15px;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  margin-top: 15px;
+  margin-left: 17px;
+}
+.checkbox:checked~.checkbox-unchecked {
+  opacity: 0;
+  visibility: hidden;
+}
+.checkbox:checked~.checkbox-checked {
+  opacity: 1;
+  visibility: visible;
+}
+.checktext {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
