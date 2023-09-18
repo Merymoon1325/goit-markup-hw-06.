@@ -555,7 +555,7 @@ padding: 14px 32px 14px 32px;
 }
 .div-clientes:hover {
   border-color: var(--brand-color);
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-div {
   display: flex;
