@@ -555,7 +555,7 @@ padding: 14px 32px 14px 32px;
 }
 .div-clientes:hover {
   border-color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-div {
   display: flex;
@@ -601,13 +601,15 @@ padding: 14px 32px 14px 32px;
 .icons-links:hover {
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-links:focus {
   fill: rgb(255, 255, 255);
   background-color: rgb(33, 150, 243);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+ }
 .icons-footer {
   display: flex;
   justify-content: center;
@@ -621,11 +623,11 @@ padding: 14px 32px 14px 32px;
 }
 .icons-footer:hover {
   background-color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icons-footer:focus {
   background-color: var(--brand-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop {
   display: flex;
@@ -663,7 +665,7 @@ border-color: rgba(0, 0, 0, 0.10);
 }
 .icon-modal:hover {
 fill: rgb(33, 150, 243);
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 cursor: pointer;
 }
 .div-boton-modal {
@@ -858,15 +860,15 @@ padding-left: 40px;
 }
 .input-modal:focus {
   border-color: #2196F3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 .input-modal:focus + .icon-persona-negra {
 fill: #2196F3;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .area:focus {
   border-color: #2196F3;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .area:focus-visible {
 outline: none;
